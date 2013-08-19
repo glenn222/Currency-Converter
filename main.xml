@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding = "25dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding = "2dp"
+        android:text="Currency Converter"
+        android:textSize="24dp" />
+  
+
+        <EditText
+            android:id="@+id/convert1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter amount here"
+            android:padding="2dp">
+            <requestFocus />
+        </EditText>
+        
+    <Spinner
+        android:id="@+id/firstConversion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+	
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:padding = "10dp"
+        android:layout_gravity = "center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Spinner
+        android:id="@+id/secondConversion"
+        android:layout_width="fill_parent"
+        android:padding = "10dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/buttonconvert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding = "10dp"
+            android:layout_weight="100"
+            android:text="Convert!" />
+		
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvConversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding = "10dp"
+        android:layout_gravity="center"
+        android:text="Conversion: "
+        android:textSize = "24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center"
+        android:textSize="18dp"
+        android:text="" />
+
+</LinearLayout>
